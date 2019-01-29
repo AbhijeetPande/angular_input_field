@@ -7,10 +7,12 @@ import { ComponentStillLoadingError } from '@angular/core/src/linker/compiler';
   styleUrls: ['./tester.component.css']
 })
 export class TesterComponent implements OnInit {
-
-  onKeyUp(emailName) {
-    console.log(emailName);
+varname = 'me@example.com';
+funky = 'sampletext';
+  onKeyUp() {
+    console.log(this.varname);
   }
+
 
   constructor() { }
 

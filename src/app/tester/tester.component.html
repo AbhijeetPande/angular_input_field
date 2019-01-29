@@ -1,11 +1,21 @@
 <!DOCTYPE html>
 <html>
+    <head>
+            <link href='https://fonts.googleapis.com/css?family=Eater' rel='stylesheet'>
+    </head>
 <body>
     <p>
         tester works!
     </p>
-    <h2>Please enter your email below:</h2>
-    <input #email (keyup.enter) = "onKeyUp(email.value)" />
+    <h2>Please enter your email below: (this will log it into the console) </h2>
+    <input [(ngModel)] = "varname" (keyup.enter) = "onKeyUp()" />
+    <hr>
+    <h2>This section is the funky text font generator. enter any piece of text 
+        and press enter to have it returned with a funky font!</h2>
+    
+    <input [(ngModel)] = "funky" (keyup.enter) = "onKeyUpFun" />
+    <h1 class="Funky">{{funky}}</h1>
+
 </body>
 
 </html>
